@@ -1,0 +1,41 @@
+{
+    "name": "sampic/laravel-adorableavatars",
+    "description": "Laravel extension allowing you to generate an avatar based on the site http://avatars.adorable.io/",
+    "keywords": [
+        "laravel",
+        "laravel5",
+        "adorable avatars"
+    ],
+    "homepage": "https://github.com/SampicBE/laravel-adorable-avatars",
+    "version": "1.0.0-dev",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sampic",
+            "email": "laravel@sampic.eu"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^5.7"
+    },
+    "autoload":{
+        "psr-4":{
+            "Sampic\\LaravelAdorableAvatars\\":"src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sampic\\LaravelAdorableAvatars\\LaravelAdorableAvatarsServiceProvider"
+            ],
+            "aliases": {
+                "AdorableAvatars": "Sampic\\LaravelAdorableAvatars\\Facades\\AdorableAvatars"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "require-dev": {
+        "orchestra/testbench": "^3.5"
+    }
+}
