@@ -27,7 +27,12 @@ Alias the Adorable Avatars facade by adding it to the aliases array in the `conf
 
 Update the config file to specify this size by default.
 
-Allowed defaults:
+```
+php artisan vendor:publish --provider="Sampic\LaravelAdorableAvatars\LaravelAdorableAvatarsServiceProvider"
+```
+
+### Default configuration : 
+
 - (boolean) `hash_string` (_default: true_): Hide the content that allows you to generate your avatar
 - (boolean) `secure_url` (_default: true_): allows to use the API in https
 - (integer) `size`: (_default: 80_) the default size of the generated avatar
